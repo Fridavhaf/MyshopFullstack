@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/frida/Desktop/Webapplikasjoner/Myshop-fullstack demo/api/wwwroot/images/chickenleg.jpg",
+      "PackagePath": "staticwebassets/images/chickenleg.jpg"
+    },
+    {
+      "Id": "/Users/frida/Desktop/Webapplikasjoner/Myshop-fullstack demo/api/wwwroot/images/cider.jpg",
+      "PackagePath": "staticwebassets/images/cider.jpg"
+    },
+    {
+      "Id": "/Users/frida/Desktop/Webapplikasjoner/Myshop-fullstack demo/api/wwwroot/images/coke.jpg",
+      "PackagePath": "staticwebassets/images/coke.jpg"
+    },
+    {
+      "Id": "/Users/frida/Desktop/Webapplikasjoner/Myshop-fullstack demo/api/wwwroot/images/fishandchips.jpg",
+      "PackagePath": "staticwebassets/images/fishandchips.jpg"
+    },
+    {
+      "Id": "/Users/frida/Desktop/Webapplikasjoner/Myshop-fullstack demo/api/wwwroot/images/frenchfries.jpg",
+      "PackagePath": "staticwebassets/images/frenchfries.jpg"
+    },
+    {
+      "Id": "/Users/frida/Desktop/Webapplikasjoner/Myshop-fullstack demo/api/wwwroot/images/pizza.jpg",
+      "PackagePath": "staticwebassets/images/pizza.jpg"
+    },
+    {
+      "Id": "/Users/frida/Desktop/Webapplikasjoner/Myshop-fullstack demo/api/wwwroot/images/ribs.jpg",
+      "PackagePath": "staticwebassets/images/ribs.jpg"
+    },
+    {
+      "Id": "/Users/frida/Desktop/Webapplikasjoner/Myshop-fullstack demo/api/wwwroot/images/tacos.jpg",
+      "PackagePath": "staticwebassets/images/tacos.jpg"
+    },
+    {
+      "Id": "/Users/frida/Desktop/Webapplikasjoner/Myshop-fullstack demo/api/wwwroot/js/bootstrap.js",
+      "PackagePath": "staticwebassets/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/frida/Desktop/Webapplikasjoner/Myshop-fullstack demo/api/wwwroot/js/jquery.min.js",
+      "PackagePath": "staticwebassets/js/jquery.min.js"
+    },
+    {
+      "Id": "/Users/frida/Desktop/Webapplikasjoner/Myshop-fullstack demo/api/wwwroot/js/jquery.validate.js",
+      "PackagePath": "staticwebassets/js/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/frida/Desktop/Webapplikasjoner/Myshop-fullstack demo/api/wwwroot/js/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/js/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.api.props",
+      "PackagePath": "build\\api.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.api.props",
+      "PackagePath": "buildMultiTargeting\\api.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.api.props",
+      "PackagePath": "buildTransitive\\api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
