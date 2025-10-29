@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 import HomePage from './home/HomePage'
 import ItemListPage from './items/ItemListPage'
 import NavMenu from './shared/NavMenu'
+import ItemCreatePage from './items/ItemCreatePage'
 import './App.css'
 
 const App: React.FC = () => {
@@ -14,6 +15,7 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/items" element={<ItemListPage />} />
+              <Route path="/itemcreate" element={<ItemCreatePage />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
         </Router>

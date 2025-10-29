@@ -15,7 +15,16 @@ const ItemGrid: React.FC<ItemGridProps> = ({ items, apiUrl }) => {
         {items.map(item => (
           <Col key={item.itemId}>
             <Card className="h-100">
-              <Card.Img variant="top" src={`${apiUrl}${item.imageUrl}`} alt={item.name} />
+              {item.imageUrl ? (
+                <Card.Img
+                  variant="top"
+                  src={`${apiUrl}${item.imageUrl}`}
+                  alt={item.name}
+                  onError={(e) => (e.currentTarget.style.display = 'none')}
+                />
+              ) : (
+                <div style={{ textAlign: 'center', padding: '1rem' }}>No Image</div>
+              )}
               <Card.Body>
                 <Card.Title>{item.name}</Card.Title>
                 <Card.Text>

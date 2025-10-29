@@ -12,37 +12,44 @@ const ItemTable: React.FC<ItemTableProps> = ({ items, apiUrl }) => {
   const [showDescriptions, setShowDescriptions] = useState<boolean>(true);
   const toggleImages = () => setShowImages(prevShowImages => !prevShowImages);
   const toggleDescriptions = () => setShowDescriptions(prevShowDescriptions => !prevShowDescriptions);
-  
+
   return (
     <div>
       <Button onClick={toggleDescriptions} className="btn btn-secondary mb-3 me-2">
         {showDescriptions ? 'Hide Descriptions' : 'Show Descriptions'}
-      </Button> 
+      </Button>
       <Button onClick={toggleImages} className="btn btn-secondary mb-3">
         {showImages ? 'Hide Images' : 'Show Images'}
-      </Button>     
-    <Table striped bordered hover>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Price</th>
-          {showDescriptions && <th>Descriptions</th>}
-          {showImages && <th>Images</th>}
-        </tr>
-      </thead>
-      <tbody>
-        {items.map(item => (
-          <tr key={item.itemId}>
-            <td>{item.itemId}</td>
-            <td>{item.name}</td>
-            <td>{item.price} NOK</td>
-            {showDescriptions && <td>{item.description}</td>}
-            {showImages && <td><img src={`${apiUrl}${item.imageUrl}`} alt={item.name} width="120" /></td>}
+      </Button>
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            {showDescriptions && <th>Descriptions</th>}
+            {showImages && <th>Images</th>}
           </tr>
-        ))}
-      </tbody>
-    </Table>
+        </thead>
+        <tbody>
+          {items.map(item => (
+            <tr key={item.itemId}>
+              <td>{item.itemId}</td>
+              <td>{item.name}</td>
+              <td>{item.price} NOK</td>
+              {showDescriptions && <td>{item.description}</td>}
+              {showImages && (
+                <td>{item.imageUrl ? (<img
+                  src={`${apiUrl}${item.imageUrl}`}
+                  alt={item.name}
+                  width="120"
+                  onError={(e) => (e.currentTarget.style.display = 'none')}
+                />) : (<span>No Image</span>
+                )}</td>
+              )}</tr>
+          ))}
+        </tbody>
+      </Table>
     </div>
   );
 };

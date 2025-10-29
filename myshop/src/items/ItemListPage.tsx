@@ -69,6 +69,7 @@ const ItemListPage: React.FC = () => {
       {showTable
         ? <ItemTable items={filteredItems} apiUrl={API_URL} />
         : <ItemGrid items={filteredItems} apiUrl={API_URL} />}
+        <Button href='/itemcreate' className="btn btn-secondary mt-3">Add New Item</Button>
     </div>
   );
 };
